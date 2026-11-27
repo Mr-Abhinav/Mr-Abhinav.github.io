@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abhinav Chandra — Senior Mechanical Engineer | SAP PP/QM/PM</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7fb;--surface:#fff;--text:#0f172a;--muted:#5b6478;--line:#e3e7f0;--accent:#e8590c;--accent2:#2563eb;--glow:rgba(232,89,12,.12);color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0f1a;--surface:#131a2b;--text:#e8ecf5;--muted:#93a0ba;--line:#222c44;--accent:#ff8a3d;--accent2:#6ea8ff;--glow:rgba(255,138,61,.14);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b0f1a;--surface:#131a2b;--text:#e8ecf5;--muted:#93a0ba;--line:#222c44;--accent:#ff8a3d;--accent2:#6ea8ff;--glow:rgba(255,138,61,.14);color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:400 16px/1.6 Inter,system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;line-height:1.15;margin:0}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
+.logo{font:700 18px "Space Grotesk";}
+.logo b{color:var(--accent)}
+.links{display:flex;gap:18px;font-size:14px;color:var(--muted);overflow-x:auto}
+.links a:hover{color:var(--accent)}
+.btn{display:inline-block;padding:11px 20px;border-radius:10px;font-weight:600;font-size:15px;border:1px solid var(--line);background:var(--surface)}
+.btn.p{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn:hover{transform:translateY(-2px)}
+.btn{transition:transform .2s}
+.hero{padding:72px 0 48px;background:radial-gradient(600px 300px at 80% 0,var(--glow),transparent)}
+.tag{display:inline-flex;gap:8px;align-items:center;font-size:13px;padding:6px 12px;border:1px solid var(--line);border-radius:99px;background:var(--surface);color:var(--muted)}
+.dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.2)}
+h1{font-size:clamp(38px,7vw,68px);margin:18px 0 10px;letter-spacing:-1.5px}
+h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:640px;color:var(--muted);font-size:18px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:44px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
+.stat b{font:700 34px "Space Grotesk";color:var(--accent);display:block}
+.stat span{font-size:13px;color:var(--muted)}
+section{padding:52px 0}
+.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);font-weight:600}
+h2{font-size:clamp(26px,4vw,36px);margin:6px 0 26px}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-4px);border-color:var(--accent)}
+.card h3{font-size:18px;margin-bottom:8px}
+.card p{margin:0;color:var(--muted);font-size:14.5px}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.chip{font-size:12.5px;padding:4px 10px;border-radius:99px;background:var(--bg);border:1px solid var(--line);color:var(--muted)}
+.ico{font-size:26px;margin-bottom:8px}
+.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:26px}
+.job{position:relative;padding-bottom:30px}
+.job::before{content:"";position:absolute;left:-34px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--glow)}
+.job .when{font-size:13px;color:var(--accent2);font-weight:600}
+.job h3{font-size:20px;margin:2px 0}
+.job .co{color:var(--muted);font-size:14px;margin-bottom:8px}
+.job ul{margin:0;padding-left:18px;color:var(--muted);font-size:14.5px}
+.job li{margin-bottom:5px}
+.bar{margin-bottom:14px}
+.bar div:first-child{display:flex;justify-content:space-between;font-size:14px;font-weight:500;margin-bottom:6px}
+.track{height:8px;background:var(--line);border-radius:9px;overflow:hidden}
+.fill{height:100%;border-radius:9px;background:linear-gradient(90deg,var(--accent),var(--accent2));width:0;transition:width 1.2s ease}
+.lang{font:600 11px Inter;color:var(--accent2);text-transform:uppercase;letter-spacing:1px}
+.cert{display:flex;gap:14px;align-items:center}
+.cert .n{font:700 20px "Space Grotesk";color:var(--accent);min-width:34px}
+.cert small{color:var(--muted);display:block;font-size:13px}
+.contact{text-align:center}
+.contact .card{padding:40px 22px;background:linear-gradient(135deg,var(--glow),transparent),var(--surface)}
+footer{padding:26px 0;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+.ach{display:flex;flex-direction:column;gap:14px}.ach h4{margin:0 0 6px;font:600 12px Inter;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent2)}.ach ul{margin:0;padding-left:18px;color:var(--muted);font-size:14.5px}.ach li{margin-bottom:5px}.ach .why{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 16px}.ach .kind{font-size:12px;color:var(--accent);font-weight:600}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+@media (max-width:640px){.links{display:none}.hero{padding-top:44px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#top">AC<b>.</b></a>
+<div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#achievements">Achievements</a><a href="#projects">Projects</a><a href="#certs">Certificates</a><a href="#hobbies">Hobbies</a><a href="#contact">Contact</a></div>
+<a class="btn p" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=abhinavchandra84@gmail.com&amp;su=Job%20opportunity" target="_blank" rel="noopener" style="padding:8px 16px;font-size:14px">Hire me</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<span class="tag"><i class="dot"></i> Open to relocate · 30 days notice</span>
+<h1>Abhinav <span>Chandra</span></h1>
+<p class="lead"><b style="color:var(--text)">Senior Mechanical Engineer</b> with 4+ years of work in an iron ore pellet plant, plus hands-on experience in SAP PP, QM, PM &amp; MM modules, Power BI and working experience in SAP PP &amp; QM support projects and implement project.</p>
+<div class="cta"><a class="btn p" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=abhinavchandra84@gmail.com&amp;su=Job%20opportunity" target="_blank" rel="noopener">Email me</a><a class="btn" href="https://github.com/Mr-Abhinav" target="_blank" rel="noopener">GitHub ↗</a></div>
+<div class="stats">
+<div class="stat"><b data-n="4">0</b><span>Years in plant maintenance</span></div>
+<div class="stat"><b data-n="1">0</b><span>Year in SAP PP &amp; QM support</span></div>
+<div class="stat"><b data-n="4" data-plain>0</b><span>SAP modules (PP, QM, PM, MM)</span></div>
+<div class="stat"><b data-n="7" data-plain>0</b><span>Certifications &amp; credentials</span></div>
+</div></div></header>
+
+<section id="about"><div class="wrap reveal">
+<div class="eyebrow">About</div><h2>Where mechanical meets digital</h2>
+<div class="grid g2">
+<div class="card"><h3>Plant maintenance</h3><p>Maintenance engineer in an iron ore pellet plant and wagon tippler. I do overhauls, inspections and preventive maintenance of heavy plant equipment, so machines stay available and production keeps running.</p></div>
+<div class="card"><h3>SAP functional support</h3><p>Trainee at Geschäft Formulae. I solved live S/4HANA PP tickets at L1 &amp; L2, helped with MRP monitoring and testing (UT/UAT), and supported end users at client plants.</p></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap reveal">
+<div class="eyebrow">Skills</div><h2>Core expertise</h2>
+<div class="grid g2">
+<div class="card"><h3>SAP PP</h3><p>Production planning &amp; execution</p><div class="chips"><span class="chip">Material Master</span><span class="chip">BOM</span><span class="chip">Master Recipe</span><span class="chip">Resources</span><span class="chip">MRP Monitoring</span><span class="chip">Production Orders</span><span class="chip">Process Orders</span><span class="chip">Demand Mgmt</span><span class="chip">P2P Cycle</span><span class="chip">Configuration</span></div></div>
+<div class="card"><h3>SAP QM</h3><p>Quality management &amp; PP integration</p><div class="chips"><span class="chip">Inspection Plans</span><span class="chip">MIC</span><span class="chip">Sampling Procedures</span><span class="chip">Result Recording</span><span class="chip">Defect Recording</span><span class="chip">Catalogs</span><span class="chip">Selected Sets</span><span class="chip">PP–QM Integration</span></div></div>
+<div class="card"><h3>SAP PM</h3><p>Maintenance lifecycle</p><div class="chips"><span class="chip">Notifications</span><span class="chip">Preventive Maintenance</span><span class="chip">Maintenance History</span><span class="chip">Spare Reservation</span><span class="chip">Breakdown Records</span><span class="chip">Confirmations</span><span class="chip">TECO</span></div></div>
+<div class="card"><h3>SAP MM</h3><p>Procurement &amp; inventory</p><div class="chips"><span class="chip">ME51N</span><span class="chip">MIGO</span><span class="chip">MB52 · MMBE · MB51</span><span class="chip">Spare Parts Inventory</span><span class="chip">Plant-to-Plant Transfer</span><span class="chip">SLoc Transfer</span></div></div>
+</div>
+<div class="grid" style="margin-top:16px">
+<div class="card"><h3>Tools &amp; languages</h3><div class="chips"><span class="chip">SAP S/4HANA</span><span class="chip">Microsoft Office 365</span><span class="chip">Power BI</span><span class="chip">MySQL Workbench</span><span class="chip">Python</span><span class="chip">Excel</span><span class="chip">IMS · CAPA · JSA</span></div><br><h3>Languages</h3><div class="chips"><span class="chip">Hindi</span><span class="chip">English</span></div></div>
+</div></div></section>
+
+<section id="experience"><div class="wrap reveal">
+<div class="eyebrow">Experience</div><h2>Career timeline</h2>
+<div class="tl">
+<div class="job"><div class="when">Sep 2021 – Present</div><h3>Senior Engineer</h3><div class="co">Sarda Energy &amp; Minerals Ltd</div><ul>
+<li>Worked on Integrated Management System (IMS) documents, including Corrective &amp; Preventive Actions (CAPA) and Job Safety Analysis (JSA).</li>
+<li>Monitor and manage plant operations, mainly in the hot zone. I keep key operating parameters in range to reach the target output and control the quality of the iron ore pellets.</li>
+<li>Create and release maintenance notifications in SAP. Handle stock overview, inventory issues, GRN confirmation and Purchase Requisitions.</li>
+<li>Work with Production, Materials, Quality and Maintenance teams to keep equipment available and finish maintenance on time.</li>
+<li>Help plan and do preventive maintenance, overhauls and inspections of: conveyor system, 120 TPH mixer, 65 TPH balling disc, 90 TPH travelling grate, 90 TPH rotary kiln, 120 TPH annular cooler.</li></ul></div>
+<div class="job"><div class="when">May 2022 – Jun 2023</div><h3>SAP PP Trainee</h3><div class="co">Geschäft Formulae · Clients: Sarda Energy &amp; Minerals Limited, Manorama Industries Limited</div><ul>
+<li>Solved S/4HANA PP tickets at L1 &amp; L2 level in a live plant, with help from senior consultants.</li>
+<li>Checked MRP runs and fixed basic MRP problems.</li>
+<li>Helped with Unit Testing (UT) and User Acceptance Testing (UAT) for new work and PP setting changes.</li>
+<li>Fixed production order confirmation errors, including backflushing and material use problems.</li>
+<li>Learned how PP works with MM and PM. Gave functional support to end users.</li></ul></div>
+<div class="job"><div class="when">Jul 2018 – Aug 2019</div><h3>Apprentice</h3><div class="co">Sarda Energy &amp; Minerals Limited</div><ul><li>Hands-on maintenance of rotary kilns with capacities of (500 × 2) TPD and (100 × 2) TPD.</li></ul></div>
+<div class="job"><div class="when">Jul 2017</div><h3>Intern</h3><div class="co">Avadh Sugar &amp; Energy Ltd</div></div>
+</div></div></section>
+
+<section id="achievements"><div class="wrap reveal">
+<div class="eyebrow">Achievements</div><h2>Tools I built for my plant</h2>
+<div class="grid g3">
+<div class="card ach"><div><div class="kind">APP · Wagon Tippler</div><h3>Leave Tracker App</h3><p>A simple leave management app to track leave of casual workers and staff in the Wagon Tippler department.</p></div>
+<div><h4>What it does</h4><ul><li>Admins can add, edit and delete leave records.</li><li>Shows monthly leave summaries and exports data to Excel.</li><li>Has a calendar view and a home-screen widget to see who is available and how many people are on leave today.</li><li>Cuts manual tracking and helps manpower planning.</li></ul></div>
+<div class="why"><h4>Why I built it</h4><ul><li>WhatsApp leave messages get lost and are hard to find later.</li><li>See today’s leave count and names instantly.</li><li>Check future leave early to avoid manpower shortage.</li><li>Plan daily duty without reading old group chats.</li></ul></div></div>
+
+<div class="card ach"><div><div class="kind">APP · OT &amp; Attendance</div><h3>Shift Planner</h3><p>An app to track overtime (OT) and attendance in one place, without manual calculations.</p></div>
+<div><h4>Key features</h4><ul><li>Tracks total OT hours automatically.</li><li>Graphs to compare OT across people.</li><li>Filters for current week, month or year.</li><li>Records double-duty and 12-hour duties.</li><li>Group-wise and section-wise attendance, with editable records.</li><li>PDF export and one-click data reset.</li></ul></div>
+<div class="why"><h4>Why I built it</h4><ul><li>OT was kept in Excel with manual entry. Checking records like A+B or half-shift OT took a lot of time.</li><li>Now shift in-charges record OT, update attendance and track casual OT and total hours in one place.</li><li>Only authorized shift in-charges can use it.</li><li>Very useful in shutdowns and breakdowns, when OT and manpower needs are high.</li></ul></div></div>
+
+<div class="card ach"><div><div class="kind">WEBSITE · Knowledge Platform</div><h3>PelletMech</h3><p>A website that brings pellet plant maintenance and process knowledge together in one place, from basic to advanced topics.</p></div>
+<div><h4>Key features</h4><ul><li>Pellet plant maintenance knowledge and guides.</li><li>Process-related technical information.</li><li>Basic to advanced learning resources.</li><li>Advanced engineering formulas and calculations.</li></ul></div>
+<div class="why"><h4>Why I built it</h4><ul><li>New trainees often find it hard to find the right information on maintenance, safety, IMS, electrical basics, SAP and process operations.</li><li>Useful for foremen, fitters, welders, housekeeping staff and maintenance people in their daily work.</li><li>Also helps with interview preparation and revising technical topics.</li></ul></div></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap reveal">
+<div class="eyebrow">Projects</div><h2>From my GitHub</h2>
+<div class="grid g3">
+<a class="card" href="https://github.com/Mr-Abhinav/Titanic" target="_blank" rel="noopener"><div class="lang">Jupyter Notebook</div><h3>Titanic</h3><p>Exploratory data analysis on the Titanic dataset.</p></a>
+<a class="card" href="https://github.com/Mr-Abhinav/Black_Friday" target="_blank" rel="noopener"><div class="lang">Jupyter Notebook</div><h3>Black Friday</h3><p>EDA on Black Friday sales and customer behaviour.</p></a>
+<a class="card" href="https://github.com/Mr-Abhinav/Zomato" target="_blank" rel="noopener"><div class="lang">Power BI</div><h3>Zomato</h3><p>Interactive Power BI dashboard analysing restaurant data.</p></a>
+<a class="card" href="https://github.com/Mr-Abhinav/Vrinda_Store_Data_Analysis" target="_blank" rel="noopener"><div class="lang">Excel</div><h3>Vrinda Store Analysis</h3><p>Sales data analysis and dashboard built in Excel.</p></a>
+<a class="card" href="https://github.com/Mr-Abhinav/Rock_Paper_Scissors" target="_blank" rel="noopener"><div class="lang">Python</div><h3>Rock Paper Scissors</h3><p>Classic command-line game written in Python.</p></a>
+<a class="card" href="https://github.com/Mr-Abhinav/Email_Slicer" target="_blank" rel="noopener"><div class="lang">Python</div><h3>Email Slicer</h3><p>Python utility that splits an email into username and domain.</p></a>
+</div>
+<p style="text-align:center;margin-top:22px"><a class="btn" href="https://github.com/Mr-Abhinav?tab=repositories" target="_blank" rel="noopener">All repositories ↗</a></p>
+</div></section>
+
+<section id="certs"><div class="wrap reveal">
+<div class="eyebrow">Certificates</div><h2>Verified credentials</h2>
+<div class="grid g2">
+<a class="card cert" href="https://www.coursera.org/account/accomplishments/verify/TRY8F362QXMN" target="_blank" rel="noopener"><span class="n">01</span><div><h3>Coursera Certificate</h3><small>Verify credential ↗</small></div></a>
+<a class="card cert" href="https://www.coursera.org/account/accomplishments/verify/5YBNRLRSF4DN" target="_blank" rel="noopener"><span class="n">02</span><div><h3>Coursera Certificate</h3><small>Verify credential ↗</small></div></a>
+<a class="card cert" href="https://www.coursera.org/account/accomplishments/verify/9BCXJBFLBDV8" target="_blank" rel="noopener"><span class="n">03</span><div><h3>Coursera Certificate</h3><small>Verify credential ↗</small></div></a>
+<a class="card cert" href="https://www.coursera.org/account/accomplishments/verify/J3TK3NLW2U52" target="_blank" rel="noopener"><span class="n">04</span><div><h3>Coursera Certificate</h3><small>Verify credential ↗</small></div></a>
+<a class="card cert" href="https://www.udemy.com/certificate/UC-0a52dfe4-b1d7-4854-a693-80e58f5dd319/" target="_blank" rel="noopener"><span class="n">05</span><div><h3>Udemy Certificate</h3><small>Verify credential ↗</small></div></a>
+<div class="card cert"><span class="n">06</span><div><h3>QMS Auditor / Lead Auditor</h3><small>Quality Gurus Inc. · 2025</small></div></div>
+<div class="card cert"><span class="n">07</span><div><h3>Introduction to Statistics</h3><small>Stanford (Online) · 2022</small></div></div>
+</div></div></section>
+
+<section id="education"><div class="wrap reveal">
+<div class="eyebrow">Education</div><h2>Academic background</h2>
+<div class="grid g2">
+<div class="card"><h3>B.Tech, Mechanical Engineering</h3><p>Dr. A.P.J. Abdul Kalam Technical University · 2018</p></div>
+<div class="card"><h3>Diploma in Advance Computer Software (DACS)</h3><p>Lal Bahadur Shastri Training Institute · 2020</p></div>
+</div></div></section>
+
+<section id="hobbies"><div class="wrap reveal">
+<div class="eyebrow">Hobbies</div><h2>Outside of work</h2>
+<div class="grid g2">
+<div class="card"><h3>Web series</h3><p>Watching web series and exploring different genres.</p></div>
+<div class="card"><h3>AI and new tools</h3><p>Keeping up with the latest AI updates, trying new AI tools, and learning how to use them in industries to improve efficiency and productivity.</p></div>
+<div class="card"><h3>Travelling</h3><p>Travelling and exploring new places.</p></div>
+<div class="card"><h3>Reading</h3><p>Reading books and learning new things.</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap contact reveal"><div class="card">
+<div class="eyebrow">Contact</div><h2 style="margin-bottom:10px">Let’s work together</h2>
+<p style="max-width:520px;margin:0 auto 22px">I am looking for SAP PP/QM/PM functional roles or Mechanical maintenance job roles. I am based in Chhattisgarh and willing to relocate.</p>
+<div class="cta" style="justify-content:center"><a class="btn p" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=abhinavchandra84@gmail.com&amp;su=Job%20opportunity" target="_blank" rel="noopener">abhinavchandra84@gmail.com</a><button class="btn" id="copyMail" type="button" style="font:inherit;font-weight:600;cursor:pointer;color:inherit">Copy email</button></div>
+</div></div></section>
+
+<footer>© 2026 Abhinav Chandra · Chhattisgarh, India</footer>
+
+<script>
+(function(){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('.fill').forEach(function(f){f.style.width=f.dataset.w+'%'});io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+document.querySelectorAll('[data-n]').forEach(function(el){var t=+el.dataset.n,i=0,s=setInterval(function(){i++;el.textContent=i+(el.hasAttribute('data-plain')?'':'+');if(i>=t){clearInterval(s)}},180)});
+var cb=document.getElementById('copyMail');if(cb){cb.addEventListener('click',function(){var m='abhinavchandra84@gmail.com';function done(){cb.textContent='Copied: '+m}function fb(){try{var t=document.createElement('textarea');t.value=m;document.body.appendChild(t);t.select();document.execCommand('copy');document.body.removeChild(t)}catch(e){}done()}try{navigator.clipboard.writeText(m).then(done,fb)}catch(e){fb()}})}
+})();
+</script>
+</body>
+</html>
